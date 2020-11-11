@@ -2,7 +2,7 @@ var triangoloRettangolo = {
     'base': 10,
     'altezza': 5,
     'area': function() {
-        return (this.base * triangolo.altezza) / 2;
+        return (this.base * this.altezza) / 2;
     },
     'perimetro': function() {
         var ipotenusa = Math.sqrt(Math.pow(this.altezza, 2) + Math.pow(this.base, 2));
@@ -12,8 +12,5 @@ var triangoloRettangolo = {
     }
 };
 
-var ipotenusa = triangoloRettangolo.ipotenusa;
-
-console.log(ipotenusa);
-
+console.log(triangoloRettangolo.area());
 console.log(triangoloRettangolo.perimetro());
